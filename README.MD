@@ -1,6 +1,6 @@
 # Proyecto Yard Shop
 
-> Proyecto realizado en el curso de frontent dev práctico de Platzi. Se recreará una tienda de articulos haciendo uso de HTML, CSS y JS
+> Proyecto realizado en el curso de frontend dev práctico de Platzi. Se recreará una tienda de articulos haciendo uso de HTML, CSS y JS
 
 ## Recursos web del curso
 - Color web guidelines [Shoppify](https://polaris.shopify.com/design/colors#navigation)
