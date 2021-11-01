@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email has been sent!</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template: auto 1fr auto;
+      width: 300px;
+      justify-items: center;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 48px;
+      justify-self: center;
+      display: none;
+    }
+
+    .title {
+      font-size: var(--lg);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .subtitle {
+      color: var(--very-light-pink);
+      font-size: var(--md);
+      font-weight: 300;
+      margin-top: 0;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .btn {
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background-color: var(--hospital-green);
+      color: var(--white);
+    }
+
+    .email-image {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      background-color: var(--text-input-fiels);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .email-image img {
+      width: 80px;
+    }
+
+    .resend {
+      font-size: var(--sm);
+    }
+
+    .resend span{
+      color: var(--very-light-pink);
+    }
+
+    .resend a{
+      color: var(--hospital-green);
+      text-decoration: none;
+    }
+
+
+
+    @media only screen and (max-width: 640px) {
+      .logo {
+        display: block;
+      }
+
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <div class="form-container">
+      <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+      <h1 class="title">Email has been send!</h1>
+      <p class="subtitle">Please chek your inbox for instructions on how to reset the pasword</p>
+      <div class="email-image">
+        <img src="./icons/email.svg" alt="email">
+      </div>
+      <button class="btn btn-primary">Login</button>
+      <p class="resend">
+        <span>Didn't receve the email?</span>
+        <a href="#" target="_blank" rel="noopener noreferrer">Resend</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
