@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New password</title>
+  <link rel="stylesheet" href="global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    .login {
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template: auto 1fr auto;
+      width: 300px;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 48px;
+      justify-self: center;
+      display: none;
+    }
+
+    .form-group {
+      display:flex;
+      flex-direction: column;
+    }
+
+    .label {
+      font-size: var(--sm);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .form-control {
+      background-color: var(--text-input-fiels);
+      border: none;
+      border-radius: 8px;
+      height: 30px;
+      font-size: var(--md);
+      padding: 6px;
+      margin-bottom: 12px;
+    }
+
+    .btn {
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      font-size: var(--md);
+      font-weight: bold;
+      height: 50px;
+      margin-top: 12px;
+      width: 100%;
+    }
+
+    .btn-primary {
+      background-color: var(--hospital-green);
+      color: var(--white);
+    }
+
+    .btn-secondary{
+      background-color: var(--white);
+      border: 1px solid var(--hospital-green);
+      color: var(--hospital-green);
+      font-size: var(--sm);
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 52px;
+    }
+
+    .form a{
+      background-color: var(--white);
+      color: var(--hospital-green);
+      font-size: var(--sm);
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 52px;
+    }
+
+    @media only screen and (max-width: 640px) {
+      .logo {
+        display: block;
+      }
+
+      .sign-up {
+        position: absolute;
+        bottom: 20px;
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <div class="form-container">
+      <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+      <form action="/" class="form">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="email@example.com">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" class="form-control input-password" placeholder="*******">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer">Forgot my password</a>
+        
+      </form>
+      <button class="btn btn-secondary sign-up">Sign up</button>
+    </div>
+  </div>
+</body>
+</html>
